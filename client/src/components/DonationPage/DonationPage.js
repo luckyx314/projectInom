@@ -1,7 +1,22 @@
 import React from "react";
 import "./DonationPage.css";
 
+// react redux
+import { useDispatch, useSelector } from "react-redux";
+
+// action
+import { openDonationModal } from "../../redux/actions/openDonationModal";
+
 const DonationPage = () => {
+    const dispatch = useDispatch();
+
+    const modalState = useSelector(
+        (state) => state.modalReducer.open_donationModal
+    );
+
+    const openDonateModal = () => {
+        dispatch(openDonationModal(true));
+    };
     return (
         <div className="donation-page-parent">
             <div className="donation-wrapper">
@@ -21,7 +36,7 @@ const DonationPage = () => {
                         <h2>Lorem ipsum dolor sit amet .</h2>
                         <h2>Lorem iasdi.</h2>
                     </div>
-                    <button>DONATE</button>
+                    <button onClick={openDonateModal}>DONATE</button>
                 </div>
                 <div className="volunteer-statement-container ">
                     <p>
