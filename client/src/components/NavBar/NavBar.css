@@ -2,7 +2,7 @@ header {
     width: 100%;
     background: #153043;
     display: flex;
-    height: 50px;
+    height: 60px;
     align-items: center;
     justify-content: flex-end
 }
@@ -16,4 +16,14 @@ nav ul li {
 #nav1 a {
     color: white;
     text-decoration: none;
+    padding: 10px 0;
+    font-weight: 700;
+}
+
+#nav1 a.active {
+    color: #7CAD3E;
+}
+
+#nav1 a:nth-child(2) {
+    margin: 0 20px;
 }
