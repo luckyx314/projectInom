@@ -1,0 +1,106 @@
+.donation-page-parent {
+    min-height: 80vh;
+    display: flex;
+}
+
+.donation-wrapper {
+    height: auto;
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+    /* background-color: red; */
+}
+
+.donation-contents {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    height: 300px;
+    position: relative;
+}
+
+/* shape */
+.shape-container {
+    padding-right: 1.25rem;
+}
+
+.donation-contents .rectangle-shape {
+    background: #236477;
+    height: 225px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+.peso-container {
+    display: flex;
+    align-items: center;
+}
+
+.give-txt,
+.peso-sign,
+.donation-contents div > h3,
+.donation-contents div h2,
+.piso {
+    color: #ebe8d9;
+}
+
+.give-txt {
+    font-weight: 600;
+    font-size: 1.75rem;
+    letter-spacing: 3px;
+}
+
+/* peso */
+.peso-sign {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.piso {
+    font-size: 6.75rem;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+/* Bottom shape msg */
+.donation-contents div > h3 {
+    letter-spacing: 3.25px;
+}
+
+/* DONATION HERO STATEMENT */
+.donation-contents div h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.donation-contents button,
+.volunteer-statement-container button {
+    background: #7cad3e;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.donation-contents button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px 35px;
+}
+
+.volunteer-statement-container {
+    margin-top: 75px;
+}
+
+.volunteer-statement-container p {
+    text-transform: uppercase;
+    color: #ebe8d9;
+    letter-spacing: 3.25px;
+    line-height: 1.5;
+}
+
+.volunteer-statement-container button {
+    padding: 5px 20px;
+}
