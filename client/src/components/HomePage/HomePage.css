@@ -1,0 +1,25 @@
+.home-wrapper {
+    position: relative;
+}
+
+.home-wrapper .overlay {
+    position: absolute;
+    background: rgba(21, 48, 67, .8);
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.home-container {
+    height: 100%;
+    width: 100%;
+}
+
+.home-wrapper h2 {
+    color: #EBE8D9;
+    z-index: 100;
+}
