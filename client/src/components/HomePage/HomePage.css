@@ -1,5 +1,7 @@
 .home-wrapper {
     position: relative;
+    max-width: 1290px;
+    margin: auto;
 }
 
 .home-wrapper .overlay {

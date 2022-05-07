@@ -1,15 +1,19 @@
 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #153043;
     margin-bottom: 50px;
+    width: 100%;
 }
 
 #nav1 {
-    width: 100%;
-    height: 70px;
-    /* background: red; */
     display: flex;
     justify-content: space-between;
+    height: 70px;
     align-items: center;
+    width: 100%;
+    max-width: 1290px
 }
 
 #nav1 h1 {
