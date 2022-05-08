@@ -8,22 +8,25 @@ import "./Modal.css";
 import { useSelector } from "react-redux";
 
 const Modal = () => {
+    const isModalOpen = useSelector((state) => state.modalReducer.isModalOpen);
     const donationModalStatus = useSelector(
         (state) => state.modalReducer.open_donationModal
     );
 
-    return (
-        <div className="modal-wrapper">
-            {donationModalStatus && (
-                <div className="modal-title-container">
-                    <h3>Become a Patron</h3>
-                </div>
-            )}
-            <div className="modal-overlay" />
-
-            {donationModalStatus && <DonationModal />}
-        </div>
-    );
+    if (isModalOpen) {
+        return (
+            <div className="modal-wrapper">
+                {donationModalStatus && (
+                    <div className="modal-title-container">
+                        <h3>Become a Patron</h3>
+                    </div>
+                )}
+                {donationModalStatus && <DonationModal />}
+            </div>
+        );
+    } else {
+        return null
+    }
 };
 
 export default Modal;
