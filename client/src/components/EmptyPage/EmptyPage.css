@@ -1,0 +1,12 @@
+.empty-page-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 90vh;
+    width: 100%;
+}
+
+.empty-page-container h2 {
+    color: #ebe8d9;
+}
