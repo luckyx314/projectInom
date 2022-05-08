@@ -25,7 +25,7 @@ const DonationModal = () => {
             
             <div className="donation-modal-container">
                 <div className="radio-container">
-                    <input type="radio" />
+                    <input type="radio" name="amount" />
                     <div className="radio-details">
                         <span className="peso-sign">&#8369;</span>
                         <span className="amount">5</span>
@@ -33,7 +33,7 @@ const DonationModal = () => {
                     </div>
                 </div>
                 <div className="radio-container">
-                    <input type="radio" />
+                    <input type="radio" name="amount" />
                     <div className="radio-details">
                         <span className="peso-sign">&#8369;</span>
                         <span className="amount">50</span>
@@ -41,7 +41,7 @@ const DonationModal = () => {
                     </div>
                 </div>
                 <div className="radio-container">
-                    <input type="radio" />
+                    <input type="radio" name="amount" />
                     <div className="radio-details">
                         <span className="peso-sign">&#8369;</span>
                         <span className="amount">100</span>
@@ -49,7 +49,7 @@ const DonationModal = () => {
                     </div>
                 </div>
                 <div className="radio-container">
-                    <input type="radio" />
+                    <input type="radio" name="amount" />
                     <div className="radio-details">
                         <span className="peso-sign">&#8369; eg: </span>
                         <span className="amount">500</span>
