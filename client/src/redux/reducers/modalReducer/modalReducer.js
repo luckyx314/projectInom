@@ -1,6 +1,7 @@
 const modalState = {
     open_donationModal: false,
-    isModalOpen: false,
+    open_volunteerModal: true,
+    isModalOpen: true,
 };
 
 const modalReducer = (state = modalState, action) => {
