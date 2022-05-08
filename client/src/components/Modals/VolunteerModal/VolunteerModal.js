@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 
 import "./VolunteerModal.css";
 
 const VolunteerModal = () => {
+    const [participants] = useState(100000);
+
+    const props = useSpring({
+        val: participants,
+        from: {
+            val: 0,
+        },
+        config: {
+            duration: 2000,
+        },
+    });
+
     return (
         <div className="volunteer-modal-wrapper">
             <div className="volunteer-form-container">
@@ -55,7 +67,9 @@ const VolunteerModal = () => {
             </div>
             <div className="volunteer-count-container">
                 <div className="volunteer-count">
-                    <span>{Number(100000).toLocaleString()}</span>
+                    <animated.span>
+                        {props.val.to((val) => Math.floor(val).toLocaleString())}
+                    </animated.span>
                     <div>Number of volunteers</div>
                 </div>
             </div>

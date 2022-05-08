@@ -30,11 +30,13 @@
 
 .counter-container {
     text-align: right;
+    width: 100%;
 }
 
 .counter-container div {
     color: white;
-    letter-spacing: 14px;
+    letter-spacing: 15px;
+
 }
 
 .home-wrapper button {
@@ -44,4 +46,9 @@
     border: none;
     color: white;
     margin-top: 10px;
+}
+
+.participant-details {
+    display: flex;
+    justify-content: flex-end
 }

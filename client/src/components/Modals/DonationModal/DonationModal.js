@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 // css
 import "./DonationModal.css";
-import {useDispatch} from "react-redux"
-import {errorModal} from "../../../redux/actions/erorrModal"
+import { useDispatch } from "react-redux";
+import { errorModal } from "../../../redux/actions/erorrModal";
 
 const DonationModal = () => {
     const dispatch = useDispatch();
@@ -24,8 +24,8 @@ const DonationModal = () => {
     };
 
     const handleErrorModal = () => {
-        dispatch(errorModal())
-    }
+        dispatch(errorModal());
+    };
 
     return (
         <div className="donation-modal-wrapper">
@@ -82,7 +82,9 @@ const DonationModal = () => {
                 <div className="statement">
                     You can login to edit your recurring donations at any time
                 </div>
-                <button className="next-btn" onClick={handleErrorModal}>Next</button>
+                <button className="next-btn" onClick={handleErrorModal}>
+                    Next
+                </button>
             </div>
         </div>
     );
