@@ -72,6 +72,7 @@ const HomePage = () => {
                 </h2>
                 <div>CROWD FUNDING</div>
             </div>
+            <div className="curve" />
         </div>
     );
 };
