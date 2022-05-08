@@ -37,27 +37,27 @@
     align-items: center;
 }
 
-.give-txt,
-.peso-sign,
+.donation-contents .give-txt,
+.donation-contents .peso-sign,
 .donation-contents div > h3,
 .donation-contents div h2,
-.piso {
+.donation-contents .piso {
     color: #ebe8d9;
 }
 
-.give-txt {
+.donation-contents .give-txt {
     font-weight: 600;
     font-size: 1.75rem;
     letter-spacing: 3px;
 }
 
 /* peso */
-.peso-sign {
+.donation-contents .peso-sign {
     font-size: 1.75rem;
     font-weight: 600;
 }
 
-.piso {
+.donation-contents .piso {
     font-size: 6.75rem;
     line-height: 1.25;
     font-weight: 700;

@@ -2,21 +2,20 @@ import React from "react";
 import "./DonationPage.css";
 
 // react redux
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 // action
 import { openDonationModal } from "../../redux/actions/openDonationModal";
+import Modal from "../Modals/Modal";
 
 const DonationPage = () => {
     const dispatch = useDispatch();
 
-    const modalState = useSelector(
-        (state) => state.modalReducer.open_donationModal
-    );
-
     const openDonateModal = () => {
         dispatch(openDonationModal(true));
     };
+
+
     return (
         <div className="donation-page-parent">
             <div className="donation-wrapper">
@@ -45,6 +44,7 @@ const DonationPage = () => {
                     </p>
                 </div>
             </div>
+            <Modal />
         </div>
     );
 };
