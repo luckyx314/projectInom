@@ -8,7 +8,7 @@ const ErrorModal = () => {
                 <h3>Coming soon!</h3>
             </div>
             <div className="error-modal-container">
-                <div>Sorry, this feature is not available yet.</div>
+                <div>Sorry, this feature is not yet available.</div>
             </div>
         </div>
     );
