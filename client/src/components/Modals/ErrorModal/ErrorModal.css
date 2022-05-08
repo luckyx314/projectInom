@@ -1,0 +1,29 @@
+.error-modal-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 300px;
+    max-width: 700px;
+    transform: translate(
+        -50%,
+        -50%
+    ); /* centers the element with the help of top: 50% and left: 50% */
+    overflow: none;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.error-modal-wrapper .title-container {
+    padding: 10px;
+    background: rgb(156, 29, 29);
+    border-radius: 10px 10px 0 0;
+}
+
+.error-modal-wrapper .title-container h3 {
+    color: white;
+}
+
+.error-modal-container {
+    padding: 20px;
+}

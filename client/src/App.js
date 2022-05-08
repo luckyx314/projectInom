@@ -15,10 +15,12 @@ import NavBar from "./components/NavBar/NavBar";
 import DonationPage from "./components/DonationPage/DonationPage";
 import HomePage from "./components/HomePage/HomePage";
 import NeedHelpPage from "./components/NeedHelpPage/NeedHelpPage";
+import ErrorModal from "./components/Modals/ErrorModal/ErrorModal";
 
 const App = () => {
     const dispatch = useDispatch();
     const modalState = useSelector((state) => state.modalReducer.isModalOpen);
+    const errorModalState = useSelector(state => state.modalReducer.errorModal)
 
     const handleClose = () => {
         dispatch(closeModal());
@@ -34,6 +36,7 @@ const App = () => {
                     <Route path="/need-help" element={<NeedHelpPage />} />
                 </Routes>
             </Router>
+            {errorModalState && <ErrorModal />}
         </div>
     );
 };

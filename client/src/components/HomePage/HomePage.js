@@ -2,7 +2,18 @@ import React from "react";
 // css
 import "./HomePage.css";
 
+// react redux
+import { useDispatch } from "react-redux";
+
+// actions
+import { errorModal } from "../../redux/actions/erorrModal";
+
 const HomePage = () => {
+    const dispatch = useDispatch();
+    const handleErrorModal = () => {
+        dispatch(errorModal());
+    };
+
     return (
         <div className="home-wrapper">
             <div className="home-container">
@@ -13,7 +24,7 @@ const HomePage = () => {
                     Lorem ipsum dolor sit <br /> amet, consectetur adipiscing
                     elit.
                 </p>
-                <button>OFFER A HAND</button>
+                <button onClick={handleErrorModal}>OFFER A HAND</button>
             </div>
             <div className="counter-container">
                 <div>WITH OVER</div>
