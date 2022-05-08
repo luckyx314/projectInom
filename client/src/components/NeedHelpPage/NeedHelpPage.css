@@ -2,7 +2,6 @@
     display: flex;
     margin: auto;
     height: 75vh;
-    max-width: 1280px;
     padding: 50px;
     align-items: center;
 }
