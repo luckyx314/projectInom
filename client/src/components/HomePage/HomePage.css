@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     min-height: 70vh;
+    padding: var(--left-right-pad)
 }
 
 .home-container {

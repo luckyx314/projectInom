@@ -1,18 +1,17 @@
 .donation-page-parent {
     min-height: 70vh;
     display: flex;
+    padding: var(--left-right-pad)
 }
 
 .donation-wrapper {
-    height: auto;
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    /* background: #236477; */
 }
 
 .donation-contents {
     display: flex;
     align-items: center;
-    padding: 15px;
     height: 300px;
     position: relative;
 }

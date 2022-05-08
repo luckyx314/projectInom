@@ -3,6 +3,7 @@
     margin: auto;
     height: 75vh;
     align-items: center;
+    padding: var(--left-right-pad)
 }
 
 .help-page-container {

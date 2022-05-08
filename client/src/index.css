@@ -8,6 +8,10 @@
     overflow: hidden;
 }
 
+:root {
+    --left-right-pad: 0 250px;
+}
+
 .App {
     background: #153043;
     min-height: 100vh;
@@ -22,5 +26,15 @@
     .donation-page-parent,
     .help-page-wrapper {
         display: none !important;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    #nav1,
+    .home-wrapper,
+    .donation-page-parent,
+    .empty-page-wrapper,
+    .help-page-wrapper {
+        padding: 0 100px !important;
     }
 }
