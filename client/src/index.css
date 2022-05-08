@@ -20,15 +20,6 @@
     height: 100%;
 }
 
-@media screen and (max-width: 810px) {
-    #nav1 ul li,
-    .home-wrapper,
-    .donation-page-parent,
-    .help-page-wrapper {
-        display: none !important;
-    }
-}
-
 @media screen and (max-width: 1600px) {
     #nav1,
     .home-wrapper,
@@ -36,5 +27,19 @@
     .empty-page-wrapper,
     .help-page-wrapper {
         padding: 0 125px !important;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    #nav1 ul li,
+    .home-wrapper,
+    .donation-page-parent,
+    .help-page-wrapper {
+        display: none !important;
+    }
+
+    #nav1,
+    .empty-page-wrapper {
+        padding: 0px 45px !important;
     }
 }
