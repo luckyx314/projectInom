@@ -1,12 +1,13 @@
 .donation-page-parent {
     min-height: 70vh;
     display: flex;
-    padding: var(--left-right-pad)
+    align-items: center;
+    padding: var(--left-right-pad);
+    /* background: #236477; */
 }
 
 .donation-wrapper {
     width: 100%;
-    /* background: #236477; */
 }
 
 .donation-contents {
