@@ -1,6 +1,5 @@
-export const openDonationModal = (payload) => {
+export const openDonationModal = () => {
     return {
         type: "OPEN_DONATION_MODAL",
-        payload,
     };
 };

@@ -6,13 +6,19 @@ import { useDispatch } from "react-redux";
 
 // action
 import { openDonationModal } from "../../redux/actions/openDonationModal";
+import {openVolunteerModal} from "../../redux/actions/openVolunteerModal"
+
 import Modal from "../Modals/Modal";
 
 const DonationPage = () => {
     const dispatch = useDispatch();
 
     const openDonateModal = () => {
-        dispatch(openDonationModal(true));
+        dispatch(openDonationModal());
+    };
+
+    const open_volunteerModal = () => {
+        dispatch(openVolunteerModal());
     };
 
 
@@ -25,7 +31,7 @@ const DonationPage = () => {
                             <p className="give-txt">GIVE</p>
                             <div className="peso-container">
                                 <p className="peso-sign">₱</p>
-                                <p className="piso">1</p>
+                                <p className="piso">5</p>
                             </div>
                         </div>
                         <h3>lorem ipsum</h3>
@@ -40,7 +46,7 @@ const DonationPage = () => {
                 <div className="volunteer-statement-container ">
                     <p>
                         Another way you can help us <br /> reach this goal is to{" "}
-                        <button>VOLUNTEER</button>
+                        <button onClick={open_volunteerModal}>VOLUNTEER</button>
                     </p>
                 </div>
             </div>

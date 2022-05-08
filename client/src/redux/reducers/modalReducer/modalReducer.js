@@ -1,7 +1,7 @@
 const modalState = {
     open_donationModal: false,
-    open_volunteerModal: true,
-    isModalOpen: true,
+    open_volunteerModal: false,
+    isModalOpen: false,
 };
 
 const modalReducer = (state = modalState, action) => {
@@ -9,7 +9,15 @@ const modalReducer = (state = modalState, action) => {
         case "OPEN_DONATION_MODAL":
             return {
                 ...state,
-                open_donationModal: action.payload,
+                open_donationModal: true,
+                open_volunteerModal: false,
+                isModalOpen: true,
+            };
+        case "OPEN_VOLUNTEER_MODAL":
+            return {
+                ...state,
+                open_volunteerModal: true,
+                open_donationModal: false,
                 isModalOpen: true,
             };
         case "CLOSE_MODAL":
