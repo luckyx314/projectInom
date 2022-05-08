@@ -1,19 +1,10 @@
 .home-wrapper {
-    position: relative;
     max-width: 1290px;
     margin: auto;
-}
-
-.home-wrapper .overlay {
-    position: absolute;
-    background: rgba(21, 48, 67, .8);
-    height: 100%;
-    width: 100%;
-    z-index: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: 0 50px;
 }
 
 .home-container {
@@ -21,7 +12,36 @@
     width: 100%;
 }
 
+.home-wrapper .home-container h1 {
+    color: #EBE8D9;
+    font-size: 2.35rem;
+}
+
+.home-wrapper p {
+    color: white;
+    margin: 10px 0;
+}
+
+
 .home-wrapper h2 {
     color: #EBE8D9;
-    z-index: 100;
+    font-size: 4rem;
+}
+
+.counter-container {
+    text-align: right;
+}
+
+.counter-container div {
+    color: white;
+    letter-spacing: 14px;
+}
+
+.home-wrapper button {
+    padding: 7px 15px;
+    cursor: pointer;
+    background: #7CAD3E;
+    border: none;
+    color: white;
+    margin-top: 10px;
 }

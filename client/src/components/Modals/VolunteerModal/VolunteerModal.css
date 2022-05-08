@@ -24,7 +24,7 @@
 }
 
 .volunteer-form-container form {
-    padding: 30px;
+    padding: 30px 15px;
 }
 
 .volunteer-form-container input[type="text"],
@@ -77,7 +77,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 15px;
+    padding: 5px;
 }
 
 .volunteer-count span {

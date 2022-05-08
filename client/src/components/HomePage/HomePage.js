@@ -2,18 +2,25 @@ import React from "react";
 // css
 import "./HomePage.css";
 
-// image
-import background from "../../images/hands.jpg";
-
 const HomePage = () => {
-    const bgStyle = {
-        backgroundImage: `url(${background})`,
-    };
     return (
         <div className="home-wrapper">
-            <div className="overlay" />
-            <div className="home-container" style={bgStyle}>
-                <h2>Project Inom: Water Distribution Program</h2>
+            <div className="home-container">
+                <h1>
+                    Project Inom: <br /> Water Distribution Program
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit <br /> amet, consectetur adipiscing
+                    elit.
+                </p>
+                <button>OFFER A HAND</button>
+            </div>
+            <div className="counter-container">
+                <div>WITH OVER</div>
+                <h2>{Number(100000).toLocaleString()}+</h2>
+                <div>VOLUNTEERS</div>
+                <h2>&#8369;{Number(150000).toLocaleString()}+</h2>
+                <div>CROWD FUNDING</div>
             </div>
         </div>
     );

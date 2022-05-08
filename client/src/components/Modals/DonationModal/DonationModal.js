@@ -22,7 +22,6 @@ const DonationModal = () => {
 
     return (
         <div className="donation-modal-wrapper">
-            
             <div className="donation-modal-container">
                 <div className="radio-container">
                     <input type="radio" name="amount" />
