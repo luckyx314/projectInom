@@ -55,9 +55,9 @@ const App = () => {
             <Router>
                 <NavBar />
                 <Routes>
-                    <Route path="/donate" element={<DonationPage />} />
-                    <Route path="/home" element={<HomePage />} />
-                    <Route path="/need-help" element={<NeedHelpPage />} />
+                    <Route exact path="/" element={<HomePage />} />
+                    <Route exact path="/donate" element={<DonationPage />} />
+                    <Route exact path="/need-help" element={<NeedHelpPage />} />
                 </Routes>
             </Router>
             {errorModalState && <ErrorModal />}
