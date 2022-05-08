@@ -5,10 +5,10 @@ const ErrorModal = () => {
     return (
         <div className="error-modal-wrapper">
             <div className="title-container">
-                <h3>Sorry</h3>
+                <h3>Coming soon!</h3>
             </div>
             <div className="error-modal-container">
-                <div>This feature is currently unavailable.</div>
+                <div>Sorry, this feature is not available yet.</div>
             </div>
         </div>
     );

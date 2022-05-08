@@ -2,8 +2,11 @@ import React, { useState } from "react";
 
 // css
 import "./DonationModal.css";
+import {useDispatch} from "react-redux"
+import {errorModal} from "../../../redux/actions/erorrModal"
 
 const DonationModal = () => {
+    const dispatch = useDispatch();
     const [btnState, setBtnState] = useState({
         activeBtn: 2,
     });
@@ -19,6 +22,10 @@ const DonationModal = () => {
             return "inactive";
         }
     };
+
+    const handleErrorModal = () => {
+        dispatch(errorModal())
+    }
 
     return (
         <div className="donation-modal-wrapper">
@@ -44,7 +51,7 @@ const DonationModal = () => {
                     <div className="radio-details">
                         <span className="peso-sign">&#8369;</span>
                         <span className="amount">100</span>
-                        <p className="gallons-detail">100 gallons of water</p>
+                        <p className="gallons-detail">1000 gallons of water</p>
                     </div>
                 </div>
                 <div className="radio-container">
@@ -75,7 +82,7 @@ const DonationModal = () => {
                 <div className="statement">
                     You can login to edit your recurring donations at any time
                 </div>
-                <button className="next-btn">Next</button>
+                <button className="next-btn" onClick={handleErrorModal}>Next</button>
             </div>
         </div>
     );
