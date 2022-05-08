@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <header>
         <nav id="nav1">
-            <h1>nstpG8</h1>
+            <h1><a href="/" className="logo" >nstp<span>G8</span></a></h1>
             <ul>
                 <li>
                     <NavLink to="/">HOME</NavLink>

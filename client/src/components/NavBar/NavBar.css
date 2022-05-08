@@ -36,6 +36,11 @@ nav ul li {
     color: #7cad3e;
 }
 
+#nav1 .logo span {
+    color: #7cad3e;
+}
+
+
 #nav1 a:nth-child(2) {
     margin: 0 45px;
 }
