@@ -47,6 +47,7 @@
 
 .form-container form label {
     color: white;
+    width: 20%;
 }
 
 .form-container {
