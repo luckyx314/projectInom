@@ -6,7 +6,7 @@ import { useDispatch } from "react-redux";
 
 // action
 import { openDonationModal } from "../../redux/actions/openDonationModal";
-import {openVolunteerModal} from "../../redux/actions/openVolunteerModal"
+import { openVolunteerModal } from "../../redux/actions/openVolunteerModal";
 
 import Modal from "../Modals/Modal";
 
@@ -21,12 +21,15 @@ const DonationPage = () => {
         dispatch(openVolunteerModal());
     };
 
-
+    const give5 = () => {
+        console.log(give5);
+        dispatch(openDonationModal());
+    };
     return (
         <div className="donation-page-parent">
             <div className="donation-wrapper">
                 <div className="donation-contents">
-                    <div className="shape-container">
+                    <div className="shape-container" onClick={give5}>
                         <div className="rectangle-shape">
                             <p className="give-txt">GIVE</p>
                             <div className="peso-container">

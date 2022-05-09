@@ -31,6 +31,12 @@
 /* shape */
 .shape-container {
     padding-right: 1.25rem;
+    cursor: pointer;
+}
+
+.donation-contents .rectangle-shape:hover {
+    background: rgb(27, 77, 94);
+    transition-delay: .07s;
 }
 
 .donation-contents .rectangle-shape {
