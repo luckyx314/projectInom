@@ -1,5 +1,5 @@
 .donation-page-parent {
-    min-height: 70vh;
+    min-height: 75vh;
     display: flex;
     align-items: center;
     padding: var(--left-right-pad);
@@ -8,6 +8,17 @@
 
 .donation-wrapper {
     width: 100%;
+}
+
+@media screen and (max-width: 918px) {
+    .donation-wrapper {
+        padding: 0 !important;
+    }
+}
+@media screen and (min-width: 1080px) {
+    .donation-wrapper {
+        padding: 0 75px;
+    }
 }
 
 .donation-contents {
