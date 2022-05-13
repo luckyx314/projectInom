@@ -15,7 +15,7 @@ const HomePage = () => {
         dispatch(errorModal());
     };
 
-    const [participants] = useState(120000);
+    const [participants] = useState(450000);
     const [funding] = useState(100000);
 
     const props = useSpring({
