@@ -1,3 +1,3 @@
 # PROJECT INOM
 A fontend design I made for our nstp activity.
-Irrelevant or unnecessary for the said activity, but a good practice for me.
+Irrelevant for the overall activity, but a good practice project for me.
